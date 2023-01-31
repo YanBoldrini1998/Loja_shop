@@ -3,3 +3,6 @@ function Save (){
 
 
 }
+function del (id){
+    // implementar
+}
