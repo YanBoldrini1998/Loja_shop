@@ -1,8 +1,9 @@
-function Cliente() {
-    var Id
+function Produto (){
+
+    var Id;
     var Nome;
-    var Idade;
-    var Cpf;
+    var Marca;
+    var QtdProduto;
 
     this.getId = function () {
         return Id;
@@ -17,16 +18,17 @@ function Cliente() {
     this.setNome = function (value) {
         Nome = value;
     };
-    this.getIdade = function () {
-        return Idade;
+    this.getQtdProduto = function () {
+        return QtdProduto;
     };
-    this.setIdade = function (value) {
-        Idade = value;
+    this.setQtdProduto = function (value) {
+        QtdProduto = value;
     };
-    this.getCpf = function (){
-        return Cpf;
-    }
-    this.setCpf = function (value){
-        Cpf = value;
-    }
+
+    this.getMarca = function () {
+        return Marca;
+    };
+    this.setMarca = function (value) {
+        Marca = value;
+    };
 }
