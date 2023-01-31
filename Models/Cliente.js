@@ -20,6 +20,6 @@ function Cliente() {
         return Cpf;
     }
     this.setCpf = function (value){
-        CPF = value;
+        Cpf = value;
     }
 }
