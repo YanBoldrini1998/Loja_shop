@@ -1,22 +1,12 @@
 {
-  "name": "shop_project",
-  "version": "1.0.0",
-  "description": "javaScript",
-  "main": "Index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YanBoldrini1998/Loja_shop.git"
-  },
-  "author": "y@n",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/YanBoldrini1998/Loja_shop/issues"
-  },
-  "homepage": "https://github.com/YanBoldrini1998/Loja_shop#readme",
-  "dependencies": {
-    "bootstrap": "^5.2.3"
-  }
+  "name": "Loja_shop",
+  "type": "extensionHost",
+  "request": "launch",
+  "runtimeExecutable": "${execPath}",
+  "args": [
+      "--extensionDevelopmentPath=${workspaceFolder}"
+  ],
+  "outFiles": [
+      "${workspaceFolder}/out/**/*.js"
+  ],
 }
