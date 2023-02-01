@@ -10,7 +10,7 @@
     <title>SHOP</title>
 </head>
 <body>
-    <ul class="nav nav-tabs">
+  <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" aria-current="HomePage" href="#">Home</a>
   </li>
@@ -24,5 +24,92 @@
     <a class="nav-link" href="#">About</a>
   </li>
 </ul>
+
+<div class="aw-layout-loading  js-loading-overlay">
+	<div class="aw-layout-loading__container">
+		<span class="aw-balls-spinner">Carregando...</span>
+	</div>
+</div>
+</aside>
+	
+<section class="aw-layout-content  js-content">
+
+
+<div class="page-header">
+	<div class="container-fluid">
+		<h1>
+			Cadastro de produto
+		</h1>
+	</div>
+</div>
+
+<div class="container-fluid">
+
+	<form method="get" class="form-vertical  js-form-loading">
+		
+		<div class="form-group">
+			<label for="input-produto-nome">Nome</label>
+			<input id="input-produto-nome" type="text" class="form-control"/>
+		</div>
+
+		<div class="form-group">
+			<label for="input-produto-descricao">Descrição</label>
+			<textarea id="input-produto-descricao" rows="3" class="form-control"></textarea>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="form-group">
+					<label for="input-produto-preco">Preço unitário</label>
+					<input id="input-produto-preco" type="text" class="form-control" placeholder="R$"/>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+				<div class="form-group">
+					<label for="input-produto-estoque">Estoque</label>
+					<input id="input-produto-estoque" type="text" class="form-control" placeholder="Unidades"/>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<button class="btn  btn-primary" type="submit">Salvar</button>
+			<a href="Views/ListView.html" class="btn  btn-default">Cancelar</a>
+			<a href="#" class="btn  btn-link  aw-btn-link-danger" onclick="excluir()">Excluir este produto</a>
+		</div>
+
+	</form>
+</div>
+
+<script>
+function excluir() {
+	swal({
+		title: "Tem certeza?",
+		text: "Você não poderá recuperar o produto após a exclusão.",
+		type: "warning",
+		showCancelButton: true,
+		confirmButtonColor: "#DD6B55",
+		confirmButtonText: "Sim, exclua agora!",
+		closeOnConfirm: false,
+		showLoaderOnConfirm: true
+	}, function() {
+		setTimeout(function() {
+			swal("Excluído!", "O produto foi excluído com sucesso.", "success");
+		}, 2000);
+	});
+}
+</script>
+</section>
+</div>
+<div class="aw-search-modal  js-search-modal">
+	
+	<div class="aw-search-modal__controls">
+		<i class="glyphicon glyphicon-remove  js-search-modal-close"></i>
+	</div>
+</div>
+
+<script src="assets/javascripts/vendors.min.js"></script>
+<script src="assets/javascripts/algaworks.min.js"></script>
 </body>
 </html>

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/YanBoldrini1998/Loja_shop/issues"
   },
-  "homepage": "https://github.com/YanBoldrini1998/Loja_shop#readme"
+  "homepage": "https://github.com/YanBoldrini1998/Loja_shop#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
 }
