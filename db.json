@@ -1,0 +1,18 @@
+{
+    "products": [{
+            "id": 1,
+            "name": "Camisetas",
+            "price": 29.99
+        },
+        {
+            "id": 2,
+            "name": "Botas",
+            "price": 69.99
+        },
+        {
+            "id": 3,
+            "name": "Acessórios",
+            "price": 4.99
+        }
+    ]
+}

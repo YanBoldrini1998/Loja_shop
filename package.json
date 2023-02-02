@@ -1,12 +1,23 @@
 {
-  "name": "Loja_shop",
-  "type": "extensionHost",
-  "request": "launch",
-  "runtimeExecutable": "${execPath}",
-  "args": [
-      "--extensionDevelopmentPath=${workspaceFolder}"
-  ],
-  "outFiles": [
-      "${workspaceFolder}/out/**/*.js"
-  ],
+    "name": "loja_shop",
+    "version": "2.0.0",
+    "description": "#",
+    "main": "Index.html",
+    "scripts": {
+        "start": "json-server --watch db.json --port 3001"
+    },
+    "keywords": [],
+    "author": "Juliana Gomes",
+    "license": "ISC",
+    "dependencies": {
+        "json-server": "^0.17.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/YanBoldrini1998/Loja_shop.git"
+    },
+    "bugs": {
+        "url": "https://github.com/YanBoldrini1998/Loja_shop/issues"
+    },
+    "homepage": "https://github.com/YanBoldrini1998/Loja_shop#readme"
 }
