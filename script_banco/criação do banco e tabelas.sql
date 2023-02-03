@@ -1,0 +1,46 @@
+CREATE TABLE usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nomeusuario VARCHAR(255) NOT NULL,
+  senha VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  perfil_id INT NOT NULL
+);
+
+
+CREATE TABLE perfis (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome_perfil VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE produtos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  descricao VARCHAR(255) NOT NULL,
+  preco DECIMAL(10, 2) NOT NULL,
+  estoque INT NOT NULL
+);
+
+
+CREATE TABLE clientes (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  telefone VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE vendas (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  venda_id INT NOT NULL,
+  usuario_id INT NOT NULL,
+  data_venda DATE NOT NULL,
+  total DECIMAL(10, 2) NOT NULL
+);
+
+
+CREATE TABLE estoque(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  produto_id INT NOT NULL,
+  quantidade INT NOT NULL
+);
