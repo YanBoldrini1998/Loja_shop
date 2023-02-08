@@ -1,4 +1,4 @@
-export class LoginView{
+class LoginView{
     constructor() {
         this.loginForm = document.getElementById('login-form');
         this.usernameInput = document.getElementById('user');
