@@ -1,8 +1,9 @@
 function Cliente() {
     var Id
-    var Nome;
+    var NomeUsuario;
     var Idade;
     var Cpf;
+    var Password;
 
     this.getId = function () {
         return Id;
@@ -11,11 +12,11 @@ function Cliente() {
         //Nome = ClienteController;
         // validar como criar um metodo de auto-incremento para set no id do cliente(code ou Banco de dados).
     };
-    this.getNome = function () {
-        return Nome;
+    this.getNomeUsuario = function () {
+        return NomeUsuario;
     };
-    this.setNome = function (value) {
-        Nome = value;
+    this.setNomeUsuario = function (value) {
+        NomeUsuario = value;
     };
     this.getIdade = function () {
         return Idade;
@@ -29,4 +30,11 @@ function Cliente() {
     this.setCpf = function (value){
         Cpf = value;
     }
+    this.getPassword = function (){
+        return Password;
+    }
+    this.setPassword = function (value){
+        Password = value;
+    }
+
 }
