@@ -17,7 +17,7 @@
             <a class="nav-link active" aria-current="HomePage" href="#">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./assets/camiseta.png">Camisetas</a>
+            <a class="nav-link" href="./camisetas.html">Camisetas</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="./botas.html">Botas</a>
@@ -48,7 +48,7 @@
             </div>
         </div>
 
-        <div class="container-fluid">
+        < class="container-fluid">
 
             <form method="get" class="form-vertical  js-form-loading">
 
@@ -85,26 +85,33 @@
                 </div>
 
             </form>
-        </div>
 
-        <script>
-            function excluir() {
-                swal({
-                    title: "Tem certeza?",
-                    text: "Você não poderá recuperar o produto após a exclusão.",
-                    type: "warning",
-                    showCancelButton: true,
-                    confirmButtonColor: "#DD6B55",
-                    confirmButtonText: "Sim, exclua agora!",
-                    closeOnConfirm: false,
-                    showLoaderOnConfirm: true
-                }, function() {
-                    setTimeout(function() {
-                        swal("Excluído!", "O produto foi excluído com sucesso.", "success");
-                    }, 2000);
-                });
-            }
-        </script>
+
+            <script>
+                function excluir() {
+                    swal({
+                        title: "Tem certeza?",
+                        text: "Você não poderá recuperar o produto após a exclusão.",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "Sim, exclua agora!",
+                        closeOnConfirm: false,
+                        showLoaderOnConfirm: true
+                    }, function() {
+                        setTimeout(function() {
+                            swal("Excluído!", "O produto foi excluído com sucesso.", "success");
+                        }, 2000);
+                    });
+                }
+            </script>
+
+            <BUTTON onclick="window.location.href='/Views/login.html'">Login</BUTTON>
+            <BUTTON onclick="window.location.href='/Views/cadastro.html'">Cadastrar</BUTTON>
+
+
+
+
     </section>
     </div>
     <div class="aw-search-modal  js-search-modal">
