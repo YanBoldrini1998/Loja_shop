@@ -25,16 +25,31 @@
             </div>
 
             <div class="form_grupo">
-                <label for="e-mail" class="form_label">Email</label>
+                <label for="e-mail" class="form_label">E-mail</label>
                 <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
             </div>
 
             <div class="form_grupo">
                 <label for="phone" class="form_label">Telefone</label>
-                <input type="number" name="phone" class="form_input" id="phone" placeholder="+55 (69)999999999" required>
+                <input type="number" name="phone" class="form_input" id="phone" placeholder="(69)999999999" required>
             </div>
 
             <div class="form_grupo">
+                <label for="Cep" class="form_label"><Address>Endereço</Address></label>
+                <input for="cep" name="endereco" class="form_input" id="endereco" placeholder="cep" required>
+
+        <label>Cep:
+        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+               onblur="pesquisacep(this.value);" /></label><br />
+        <label>Rua:
+        <input name="rua" type="text" id="rua" size="60" /></label><br />
+        <label>Bairro:
+        <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+        <label>Cidade:
+        <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+        <label>Estado:
+        <input name="uf" type="text" id="uf" size="2" /></label><br />
+    </form>
                 <script>
                     function limpa_formulário_cep() {
                         //Limpa valores do formulário de cep.
@@ -107,75 +122,10 @@
 </head>
 
 <body>
-    <!-- Inicio do formulario -->
-    <form method="get" action=".">
-        <label>Cep:
-        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-               onblur="pesquisacep(this.value);" /></label><br />
-        <label>Rua:
-        <input name="rua" type="text" id="rua" size="60" /></label><br />
-        <label>Bairro:
-        <input name="bairro" type="text" id="bairro" size="40" /></label><br />
-        <label>Cidade:
-        <input name="cidade" type="text" id="cidade" size="40" /></label><br />
-        <label>Estado:
-        <input name="uf" type="text" id="uf" size="2" /></label><br />
-        <label>IBGE:
-        <input name="ibge" type="text" id="ibge" size="8" /></label><br />
-    </form>
-    </div>
-
-    <div class="form_grupo">
+<div class="form_grupo">
         <label for="datanascimento" class="form_label">Data de Nascimento</label>
         <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required>
     </div>
-    <div class="form_grupo">
-
-        <label for="estadocivil" class="text">Estado civil</label>
-        <select name="estadocivil" class="dropdown" required>
-                
-                <option selected disabled class="form_select_option" value="">Selecione</option>
-                <option value="Solteiro" class="form_select_option">Solteiro(a)</option>
-                <option value="Casado" class="form_select_option">Casado(a) </option>
-                <option value="Divorciado" class="form_select_option">Divorciado(a)</option>                    
-                <option value="Viúvo" class="form_select_option">Viúvo(a)</option>                    
-            
-            </select>
-    </div>
-
-    <div class="form_grupo">
-
-        <label for="estadocivil" class="text">Identidade de Gênero</label>
-        <select name="estadocivil" class="dropdown" required>
-                
-                <option selected disabled class="form_select_option" value="">Selecione</option>
-                <option value="Mulher Cisgênero" class="form_select_option">Mulher Cisgênero</option>
-                <option value="Mulher Transgênero" class="form_select_option">Mulher Transgênero </option>
-                <option value="Homem Cisgênero" class="form_select_option">Homem Cisgênero</option>
-                <option value="Homem Transgênero" class="form_select_option">Homem Transgênero </option>
-                <option value="Gênero Não-Binário" class="form_select_option">Gênero Não-Binário</option>
-                <option value="Agênero" class="form_select_option">Agênero </option>
-                
-            </select>
-    </div>
-
-    <div class="form_grupo">
-
-        <label for="estadocivil" class="text">Orientação Sexual</label>
-        <select name="estadocivil" class="dropdown" required>
-                
-                <option selected disabled class="form_select_option" value="">Selecione</option>
-                <option value="Heterossexual" class="form_select_option">Heterossexual</option>
-                <option value="Homossexual" class="form_select_option">Homossexual </option>
-                <option value="Bissexual" class="form_select_option">Bissexual</option>                    
-                <option value="Pansexual" class="form_select_option">Pansexual</option>                    
-            
-            </select>
-    </div>
-
-
-
-
     <div class="submit">
         <input type="hidden" name="acao" value="enviar">
         <button type="submit" name="Submit" class="submit_btn">Cadastrar</button>
