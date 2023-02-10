@@ -13,7 +13,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
             <link rel="stylesheet" href="/css/styles.css">
-            <script src="cadastroView.js"></script>
+            <script src="./JS/cadastroView.js"></script>
 
             <title>Cadastre-se</title>
 
@@ -53,8 +53,7 @@
 
                     <form method="get" action=".">
                         <div class="form_grupo"> <label>Cep:
-                            <label for="cep" class="form_label">Cep:</label>
-                            <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" /></label><br />
+                            <input name="cep" type="text" id="cep" onblur="pesquisacep(this.value);" /></label><br />
                         </div>
 
                         <div class="form_grupo">
@@ -62,7 +61,7 @@
                         <input name="rua" type="text" id="rua"></label><br /></div>
 
                         <div class="form_grupo">
-                            <label>Bairro:
+                            <label>Bairro:  
                         <input name="bairro" type="text" id="bairro"></label><br /></div>
 
                         <div class="form_grupo">
