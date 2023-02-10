@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color:white;
 }
 
 h1 {
@@ -194,7 +194,7 @@ ul li {
 body {
     padding: 0;
     margin: 0;
-    background-color: white;
+    background-color: rgb(34, 31, 31);
 }
 
 #login {
